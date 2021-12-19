@@ -1,0 +1,474 @@
+header
+    position: relative
+    width: 100%
+
+nav
+    background-color: #212121
+    width: 100%
+    height: 50px
+    display: flex
+    align-items: center
+    position: fixed
+    z-index: 5
+
+.nav_list
+    list-style-type: none
+    display: flex
+    padding: 10px 70px
+    justify-content: space-between
+    margin: 0
+
+.nav_link
+    display: inline-block
+    border-right: 2px dotted #290e0e
+    font-size: 15px
+    font-weight: 300
+    font-style: normal
+    color: #ffffff
+    text-align: center
+    padding-right: 50px
+    text-decoration: none
+
+.nav_item:last-child .nav_link
+    border: none
+
+.hamburger
+    display: none
+
+.subheader
+    position: absolute
+    width: 100%
+    height: 84px
+    background-color: rgba(0, 0, 0, 0.6)
+    top: 50px
+
+.logo_link
+    display: block
+    max-width: 100%
+    margin-top: 16px
+
+.logo_descr
+    font-size: 13px
+    font-weight: 100
+    font-style: normal
+    color: rgba(255, 255, 255, 0.5)
+    margin-top: 6px
+    line-height: 12px
+
+.call_us
+    font-size: 12px
+    font-weight: 300
+    font-style: normal
+    text-align: right
+    color: #ffffff
+    margin-top: 19px
+
+.phone
+    display: block
+    font-size: 22px
+    font-weight: normal
+    text-align: right
+    color: #ffffff
+    text-decoration: none
+    margin-top: 8px
+    line-height: 12px
+
+.order_btn
+    width: 172px
+    height: 46px
+    margin-top: 19px
+    box-shadow: inset 0px -3px 0 0 rgba(0, 0, 0, 0.12)
+    border: solid 2px rgba(0, 0, 0, 0.07)
+    background-image: linear-gradient(to top, $blue, #4ce2ff)
+    text-shadow: 0.7px 0.7px 0 rgba(0, 0, 0, 0.21)
+    font-size: 14px
+    font-weight: 300
+    text-align: center
+    color: #ffffff
+    text-transform: uppercase
+    border-radius: 4px
+    @include btn_hover()
+    
+
+.s-visible
+    display: none
+
+.promo
+    min-height: 800px
+    background: url(../img/bg.jpg) center (center / cover) no-repeat
+    text-align: center
+    padding: 202px 0 135px 0
+
+.main_title
+    font-size: 60px
+    line-height: 60px
+    font-weight: 700
+    color: #ffffff
+    margin-bottom: 0
+
+.main_subtitle
+    font-size: 36px
+    line-height: 36px
+    font-weight: 700
+    color: #ffffff
+    margin-top: 22px
+    margin-bottom: 0
+
+.promo_descr
+    margin-top: 23px
+    font-size: 18px
+    font-weight: 400
+    color: #ffffff
+    line-height: 1.33
+
+.send_query
+    width: 259px
+    height: 63px
+    box-shadow: inset 0px -4px 0 0 rgba(0, 0, 0, 0.12)
+    border: solid 3px rgba(0, 0, 0, 0.07)
+    background-image: linear-gradient(to top, $blue, #4ce2ff)
+    border-radius: 4px
+    text-shadow: 0.7px 0.7px 0 rgba(0, 0, 0, 0.21)
+    font-size: 18px
+    font-weight: normal
+    color: #ffffff
+    text-transform: uppercase
+    margin-top: 118px
+    @include btn_hover()
+    
+
+.reasons
+    padding: 71px 0 65px 0
+
+.label
+    display: block
+    width: 112px
+    height: 24px
+    padding: 8px 11px 6px 12px
+    background-color: #000000
+    margin: 0 auto
+    font-size: 11px
+    line-height: 10px
+    font-weight: 100
+    text-align: center
+    color: #ffffff
+    text-transform: uppercase
+    text-align: center
+    &_white
+        color: #070716
+        background-color: #ffffff
+
+.title
+    font-size: 38px
+    line-height: 38px
+    font-weight: 700
+    text-align: center
+    color: #222222
+    text-transform: uppercase
+    margin-top: 38px
+    margin-bottom: 0
+    &_white
+        color: #ffffff
+        margin-top: 32px
+
+
+.reasons_block
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-top: 35px
+
+.round
+    margin-right: 26px
+    width: 113px
+    height: 113px
+    background-color: $blue
+    border-radius: 50%
+    text-align: center
+    display: flex
+    justify-content: center
+    align-items: center
+
+
+.reasons_descr
+    width: 343px
+
+.reasons_descr_title
+    font-size: 17px
+    font-weight: 400
+    color: $blue
+
+.reasons_descr_text
+    font-size: 15px
+    font-weight: 300
+    line-height: 21px
+    text-align: justify
+    color: #202020
+
+.subtitle
+    font-size: 17px
+    line-height: 17px
+    font-weight: 400
+    text-align: center
+    color: #222222
+    margin-top: 19px
+    &_white
+        color: #ffffff
+
+.mobile
+    min-height: 864px
+    padding: 48px 0 79px 0
+    background: url(../img/mesh.png) center center/cover no-repeat
+    &_block
+        width: 320px
+        height: 280px
+        padding: 91px 0 35px 0
+        mix-blend-mode: multiply
+        margin: 0 auto
+        text-align: center
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        margin-top: 32px
+        &_1
+            background-image: url(../img/one-touch.jpg)
+        &_2
+            background-image: url(../img/reliable.jpg)
+        &_3
+            background-image: url(../img/transparent.jpg)
+        &_4
+            background-image: url(../img/no-cash.jpg)
+        &_5
+            background-image: url(../img/feedback.jpg)
+        &_6
+            background-image: url(../img/divide.jpg)
+    &_descr
+            font-size: 24px
+            line-height: 1.29
+            text-align: center
+            color: #ffffff
+            text-transform: uppercase
+
+.plus
+    width: 26px
+    height: 26px
+    background-color: #000000
+    display: flex
+    justify-content: center
+    align-items: center
+    border-radius: 100%
+    margin: 0 auto
+    cursor: pointer
+    position: relative
+    &::before
+        content: ''
+        display: block
+        width: 14px
+        height: 2px
+        background-color: $blue
+        transition: 0.5s all
+    &::after
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+        content: ''
+        display: block
+        width: 2px
+        height: 14px
+        background-color: $blue
+        transition: 0.5s all
+    &:hover
+        &::before, &::after
+            background-color: $pink
+            
+
+.choise
+    min-height: 896px
+    padding: 57px 0 138px 0
+    background-color: #070716  
+    background-image: url("../img/mesh.png")
+    background-position: top 499px left 0px
+    background-repeat: no-repeat
+
+    &_img
+        display: block
+        margin: 56px auto 0 auto
+    &_text
+        margin: 0 auto
+        text-align: center
+
+.require
+    padding: 68px 0 84px 0
+    &_block
+        margin: 33px 0 0 0
+        
+    &_title
+        font-size: 22px
+        font-weight: 400
+        color: #1ca8c3
+    &_list
+        font-size: 17px
+        font-weight: 300
+        line-height: 1.41
+        color: #222222
+        list-style-type: none
+        padding-left: 50px
+        margin-top: 22px
+        
+    &_item
+        margin-bottom: 19px
+        position: relative
+        &::before
+            content: ''
+            display: block
+            background: url('../icons/blue.png') center center/cover no-repeat
+            width: 21px
+            height: 20px
+            position: absolute
+            left: -32px
+            top: 3px
+
+    &_descr
+        color: #1ca8c3
+        font-size: 17px
+        font-weight: 300
+    
+    .require_pink
+        .require_title
+            color: $pink
+        .require_item:before
+            background: url('../icons/pink.png') center center/cover no-repeat
+
+.cities
+    min-height: 717px
+    background: url('../img/map.jpg') center center/cover no-repeat
+    padding: 49px 0
+
+.show_cities
+    font-size: 15px
+    font-weight: 400
+    color: #1fbad6
+    text-decoration: none
+    text-transform: uppercase
+    display: block
+    text-align: center
+    margin-top: 486px
+
+footer
+    position: relative
+    .wrapper
+        display: flex
+        justify-content: space-between
+        align-items: top
+        padding: 50px 24px 39px 23px
+        width: 100%
+        >div
+            width: 33%
+            
+    .navigation
+        padding: 0
+        margin: 0 auto
+        display: flex
+        justify-content: center
+        position: relative
+        &::before
+            content: ''
+            position: absolute
+            top: -32px
+            width: 299px
+            height: 4px
+            background-color: #1fbad6
+
+        &_item
+            list-style-type: none
+            margin-right: 48px
+            line-height: 15px
+            &:last-child
+                margin-right: 0
+        &_link
+            font-size: 15px
+            font-weight: 300
+            color: #070716
+            text-transform: uppercase
+            text-decoration: none
+            
+    &:after
+        content: ''
+        width: 100%
+        height: 8px
+        background-color: #070716
+        position: absolute
+        top: 100%
+
+.sm_block
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    a
+        text-decoration: none
+    
+.small_round
+    width: 32px
+    height: 32px
+    background-color: #070716
+    display: flex
+    justify-content: center
+    align-items: center
+    border-radius: 50%
+    margin-right: 9px
+    
+
+.about
+    padding: 0
+    display: flex
+    margin: 15px auto 0 auto
+    justify-content: center
+    &_item
+        list-style-type: none
+        margin-right: 13px
+        line-height: 11px
+        &:last-child
+            margin-right: 0
+    &_link
+        font-size: 11px
+        font-weight: 300
+        color: #999999
+        text-transform: uppercase
+        text-decoration: none
+        
+
+.lang
+    display: block
+    text-align: center
+    margin-top: 19px
+    font-size: 11px
+    font-weight: 400
+    color: $blue
+    text-transform: uppercase
+    text-decoration: none
+    line-height: 11px
+
+.download_block
+    display: flex
+    align-items: center
+    justify-content: flex-end
+    a
+        margin-right: 6px
+        &:last-child
+            margin-right: 0
+
+.icon-facebook:before 
+    content: "\ea90"
+    color: white
+
+.icon-twitter:before 
+    content: "\ea96"
+    color: white
+
+.icon-linkedin:before
+    content: "\eac9"
+    color: white
+
+.icon-instagram:before 
+    content: "\ea92"
+    color: white
